@@ -1,0 +1,38 @@
+--- gdlmm-3.3.2/gdl/gdlmm/docklayout.cc.orig	2011-11-24 01:47:10.000000000 +0800
++++ gdlmm-3.3.2/gdl/gdlmm/docklayout.cc	2011-11-24 09:40:46.595261896 +0800
+@@ -180,10 +180,6 @@
+   return gdl_dock_layout_is_dirty(const_cast<GdlDockLayout*>(gobj()));
+ }
+ 
+-Gtk::Widget* DockLayout::get_layouts_ui()
+-{
+-  return Glib::wrap(gdl_dock_layout_get_layouts_ui(gobj()));
+-}
+ 
+ 
+ #ifdef GLIBMM_PROPERTIES_ENABLED
+--- gdlmm-3.3.2/gdl/src/docklayout.hg.orig	2011-11-24 01:40:16.000000000 +0800
++++ gdlmm-3.3.2/gdl/src/docklayout.hg	2011-11-24 09:41:11.596216944 +0800
+@@ -58,8 +58,6 @@
+   
+   _WRAP_METHOD(bool is_dirty() const, gdl_dock_layout_is_dirty)
+   
+-  _WRAP_METHOD(Gtk::Widget* get_layouts_ui(), gdl_dock_layout_get_layouts_ui)
+-  
+   
+   _WRAP_PROPERTY("dirty", bool)
+   
+--- gdlmm-3.3.2/gdl/src/gdl_method.defs.orig	2011-11-24 01:40:16.000000000 +0800
++++ gdlmm-3.3.2/gdl/src/gdl_method.defs	2011-11-24 09:40:46.595261896 +0800
+@@ -556,11 +556,6 @@
+   (return-type "gboolean")
+ )
+ 
+-(define-method get_layouts_ui
+-  (of-object "GdlDockLayout")
+-  (c-name "gdl_dock_layout_get_layouts_ui")
+-  (return-type "GtkWidget*")
+-)
+ 
+ 
+ 
