@@ -69,3 +69,10 @@ gdlmm development files.
 
 rm -fr %buildroot%_libdir/*.la
 
+
+
+%changelog
+* Sat May 05 2012 Alexander Khrukin <akhrukin@mandriva.org> 3.3.2-1
++ Revision: 796894
+- imported package gdlmm
+
