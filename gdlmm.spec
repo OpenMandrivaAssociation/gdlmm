@@ -8,7 +8,7 @@
 Summary:	C++ binding for the gdl library
 Name:		gdlmm
 Version:	3.7.3
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org/
