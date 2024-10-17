@@ -11,7 +11,7 @@ Version:	3.7.3
 Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gdl-3.0) >= 3.7
 BuildRequires:	pkgconfig(glibmm-2.4) >= 2.16
