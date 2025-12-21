@@ -13,6 +13,11 @@ License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://www.gnome.org/
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gdl-3.0) >= 3.7
 BuildRequires:	pkgconfig(glibmm-2.4) >= 2.16
 BuildRequires:	pkgconfig(gtkmm-3.0) >= 3.0
